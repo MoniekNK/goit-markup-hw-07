@@ -23,7 +23,7 @@
   <body>
     <!--HEADER-->
     <header class="header">
-      <div class="container header__container">
+      <div class="header__container">
         <a class="logo" href="./index.html">
           <span class="logo__color">Web</span><span>Studio</span></a
         >
@@ -31,7 +31,7 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="./index.html"
+              <a class="menu__link menu__link--menuActive" href="./index.html"
                 ><span class="menu__active">Agencja</span></a
               >
             </li>
@@ -189,7 +189,7 @@
         </div>
       </section>
 
-      <section class="team-section section">
+      <section class="team__section">
         <div class="container">
           <h3 class="team__header">Nasz zespół</h3>
           <ul class="team__list">
@@ -433,9 +433,9 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__box">
+        <div class="footer__box footer__box--start">
           <p>
-            <a class="logo" href="./index.html">
+            <a class="logo logo__click" href="./index.html">
               <span class="first__logo">Web</span
               ><span class="second__logo">Studio</span></a
             >
@@ -469,25 +469,25 @@
         <div class="footer__header">
           <h3 class="footer__headerTop">dołącz do nas</h3>
           <div class="footer__list">
-            <a href="#" class="footer__linkIcons">
+            <a href="#" class="footer__icons footer__icons--footer">
               <svg width="20" height="20" class="footerLink">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__linkIcons">
+            <a href="#" class="footer__icons footer__icons--footer">
               <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__linkIcons">
+            <a href="#" class="footer__icons footer__icons--footer">
               <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__linkIcons">
+            <a href="#" class="footer__icons footer__icons--footer">
               <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -497,7 +497,7 @@
 
         <!--newsletter-->
 
-        <div class="newsletter-container">
+        <div class="newsletter__container">
           <h3 class="footer__formTop">Zapisz się do newslettera</h3>
           <div class="footer__top">
             <form>
@@ -512,7 +512,11 @@
 
               <button class="newsletter__btn" type="submit">
                 Zapisz się
-                <svg class="newsletter__icon" width="24" height="24">
+                <svg
+                  class="newsletter__icon newsletter__icon--end"
+                  width="24"
+                  height="24"
+                >
                   <use href="./images/icon.svg#icon-send"></use>
                 </svg>
               </button>
