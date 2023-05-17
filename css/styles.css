@@ -179,6 +179,22 @@ body {
   width: 58px;
   border-radius: 2px;
 }
+
+.menu__active--active::after {
+  background-color: var(--object-primary-background-color);
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  height: 4px;
+  width: 58px;
+  border-radius: 2px;
+}
+
+.menu__active--active {
+  color: var(--object-primary-background-color);
+}
+
 /* CONTACT */
 
 .contact__list {
@@ -615,7 +631,7 @@ body {
 
 /*PORTFOLIO*/
 
-.portfolio__buttons {
+.container__buttons {
   display: flex;
   justify-content: center;
   column-gap: 8px;
@@ -626,14 +642,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container__button:hover,
-.container__button:focus {
-  background-color: var(--object-primary-background-color);
-  color: var(--object-secondary-background-color);
-  box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
-}
-
-.container__button {
+.container__btn {
   background-color: var(--page-tertiary-background-color);
   color: var(--text-primary-color);
   border: 0;
@@ -650,7 +659,20 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container__btn:hover,
+.container__btn:focus {
+  background-color: var(--object-primary-background-color);
+  color: var(--object-secondary-background-color);
+  box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+}
+
 /*OFFER*/
+
+.container__section--fixed {
+  padding-bottom: 0;
+  background-color: var(--page-quarternary-background-color);
+}
+
 .photo__list {
   display: flex;
   flex-wrap: wrap;
@@ -678,30 +700,26 @@ body {
 .photo__item {
   display: block;
 }
-.overlay {
+.photo__section {
+  background-color: var(--overlay-background-color);
+  color: var(--text-tertiary-color);
   position: absolute;
-  top: 0px;
   left: 0;
+  top: 294px;
+  padding: 49px 45px 49px 24px;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
-  background-color: var(--overlay-background-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  transform: translateY(0);
   transition-property: transform;
-  transform: translateY(101%);
-  transition: transform 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay p {
-  color: var(--text-tertiary-color);
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  padding: 49px 45px 49px 24px;
-}
-
-.overlay__container:hover .overlay {
+.photo__container:hover .overlay {
   transform: translateX(0);
 }
 
@@ -711,7 +729,7 @@ body {
   border-top: 0;
   padding: 20px 24px;
 }
-.photo-header {
+.photo__header {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -728,7 +746,7 @@ body {
 }
 /*newsletter*/
 
-.newsletter-container {
+.newsletter__container {
   margin-left: auto;
 }
 
