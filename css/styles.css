@@ -514,10 +514,9 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-box {
+.footer__box {
   flex-direction: column;
   display: flex;
-  margin-right: 70px;
 }
 
 .footer__box--start {
