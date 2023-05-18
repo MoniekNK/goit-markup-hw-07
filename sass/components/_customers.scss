@@ -1,0 +1,38 @@
+.our__customers {
+  background-color: getColor("page-quarternary-background-color");
+}
+
+.our__customersTop {
+  color: getColor("text-primary-color");
+  background-color: getColor("page-quarternary-background-color");
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our__customersItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.our__customersList {
+  fill: getColor("social-links-primary-icon-color");
+  background-color: getColor("page-quarternary-background-color");
+  border: 1px solid getColor("social-links-primary-icon-color");
+  border-radius: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 17.71px 32px 14.25px 32px;
+}
+
+.our__customersLis:hover,
+.our__customersList:focus {
+  fill: getColor("object-primary-background-color");
+  border: 1px solid getColor("object-primary-background-color");
+  cursor: pointer;
+}
