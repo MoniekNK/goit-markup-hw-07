@@ -91,11 +91,13 @@ body {
 .header__border {
   border-bottom: 1px solid var(--header-border-bottom-color);
 }
-.header__container {
+.menu {
   display: flex;
   height: 80px;
   align-items: center;
   position: relative;
+  margin-left: 93px;
+  margin-top: auto;
 }
 
 /* SECTION LOGO */
@@ -229,8 +231,15 @@ body {
   display: flex;
   column-gap: 10px;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--object-primary-background-color);
+}
 .contact__icon {
   text-decoration: none;
   fill: var(--parrent-color);
