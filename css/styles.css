@@ -205,12 +205,18 @@ body {
 
 /* CONTACT */
 
-.contact__list {
+.contact {
   display: flex;
   column-gap: 30px;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 0;
+}
+
+.contact__item {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__link {
@@ -223,13 +229,6 @@ body {
   display: flex;
   column-gap: 10px;
   align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--object-primary-background-color);
 }
 
 .contact__icon {
@@ -337,7 +336,7 @@ body {
 
 /* OFFER */
 
-.offer__section {
+.offer {
   background-color: var(--page-quarternary-background-color);
 }
 
