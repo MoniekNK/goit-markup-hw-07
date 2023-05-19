@@ -79,20 +79,21 @@ header {
     height: 4px;
     width: 53px;
     border-radius: 2px;
-  }
 
-  &__active {
-    color: getColor("object-primary-background-color");
-  }
-  &__active::after {
-    background-color: getColor("object-primary-background-color");
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    width: 58px;
-    border-radius: 2px;
+    &__active {
+      color: getColor("object-primary-background-color");
+
+      &__active::after {
+        background-color: getColor("object-primary-background-color");
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        width: 58px;
+        border-radius: 2px;
+      }
+    }
   }
 
   &__active--active::after {
