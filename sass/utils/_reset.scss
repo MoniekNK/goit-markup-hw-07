@@ -32,21 +32,3 @@ body {
   font-family: "Roboto", sans-serif;
   color: getColor("text-primary-color");
 }
-
-/* CONTAINER */
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container--set {
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}

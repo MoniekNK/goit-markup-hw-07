@@ -4,6 +4,16 @@ header {
   width: 100%;
 }
 
+.header__border {
+  border-bottom: 1px solid getColor("header-border-bottom-color");
+}
+.header__container {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  position: relative;
+}
+
 .logo {
   color: getColor("object-primary-background-color");
   font-family: "Raleway";
@@ -23,7 +33,7 @@ header {
     color: getColor("object-primary-background-color");
   }
 
-  &--black {
+  &__--black {
     color: getColor("text-quaternary-color");
   }
 }
