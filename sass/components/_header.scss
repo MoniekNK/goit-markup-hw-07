@@ -56,7 +56,7 @@ header {
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &__link {
-        color: getColorvar("text-primary-color");
+        color: getColor("text-primary-color");
         text-decoration: none;
         transition-property: color;
         transition-duration: 250ms;
