@@ -4,18 +4,6 @@ header {
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  &--set {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-}
-
 .logo {
   color: getColor("object-primary-background-color");
   font-family: "Raleway";
@@ -29,6 +17,10 @@ header {
 
   &--start {
     margin-right: 94px;
+  }
+
+  &__color {
+    color: getColor("object-primary-background-color");
   }
 
   &--black {
