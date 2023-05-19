@@ -51,13 +51,12 @@ header {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
 
-      &__link:hover,
-      &__link:focus {
-        color: getColor("object-primary-background-color");
+        &__link:hover,
+        &__link:focus {
+          color: getColor("object-primary-background-color");
+        }
       }
-
       &__link--menuActive {
         color: getColor("object-primary-background-color");
       }
@@ -111,12 +110,12 @@ header {
         text-decoration: none;
         gap: 30px;
         margin-left: auto;
-      }
-      &:hover,
-      &:focus {
-        color: getColor("object-primary-background-color");
-      }
 
+        &:hover,
+        &:focus {
+          color: getColor("object-primary-background-color");
+        }
+      }
       .contact__item {
         color: getColor("text-secondary-color");
         display: flex;
