@@ -93,11 +93,10 @@ body {
 }
 .menu {
   display: flex;
-  height: 80px;
   align-items: center;
-  position: relative;
-  margin-left: 93px;
-  margin-top: auto;
+  gap: 50px;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 /* SECTION LOGO */
@@ -131,6 +130,8 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  gap: 50px;
+  justify-content: space-between;
 }
 
 .menu__list {
@@ -139,6 +140,7 @@ body {
   column-gap: 46px;
   padding-left: 0;
   margin-left: 93px;
+  margin-right: 345px;
 }
 .menu__item {
   text-decoration: none;
@@ -214,6 +216,7 @@ body {
   text-decoration: none;
   gap: 30px;
   margin-left: auto;
+  align-items: center;
 }
 .contact a {
   color: var(--text-secondary-color);
@@ -244,8 +247,9 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
-  column-gap: 10px;
-  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
