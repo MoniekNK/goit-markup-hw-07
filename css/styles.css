@@ -215,6 +215,15 @@ body {
   gap: 30px;
   margin-left: auto;
 }
+.contact a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: var(--object-primary-background-color);
+}
 
 .contact__item {
   color: var(--text-secondary-color);
@@ -223,9 +232,8 @@ body {
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  gap: 30px;
-  margin-left: auto;
+  column-gap: 10px;
+  align-items: center;
 }
 
 .contact__link {
