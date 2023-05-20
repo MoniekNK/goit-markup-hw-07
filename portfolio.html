@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link href="./css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,40 +27,37 @@
     <!--HEADER-->
     <header class="header">
       <div class="container container--set">
-        <a class="logo logo--start" href="./index.html">
-          <span class="logo__color">Web</span
-          ><span class="logo__color logo__color--black">Studio</span></a
+        <a class="logo" href="./index.html">
+          <span class="logo__color">Web</span><span>Studio</span></a
         >
 
-        <nav class="header__contact">
+        <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a class="menu__link" href="./portfolio.html"
-                ><span class="menu__active menu__active--active"
-                  >Portfolio</span
-                ></a
+              <a class="menu__link menu__link--active" href="./portfolio.html"
+                >Portfolio</a
               >
             </li>
-            <li><a class="menu__link" href="#">Kontakt</a></li>
+            <li><a class="menu-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
 
-        <ul class="contact__list">
+        <ul class="contact-list">
           <li>
-            <a class="contact__item" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
+            <a class="contact-item" href="mailto:info@devstudio.com">
+              <svg class="icon-contact" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="contact__list">
-            <a class="contact__item" href="tel:+48 111 111 111">
-              <svg class="contact__icon" width="10" height="16">
+          <li class="contact-list">
+            <a class="contact-item" href="tel:+48 111 111 111">
+              <svg class="icon-contact" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -72,41 +68,41 @@
     </header>
 
     <main>
-      <section class="container__section container__section--fixed">
+      <section class="section section">
         <div class="container">
-          <ul class="container__buttons">
+          <ul class="portfolio-buttons">
             <li>
-              <button class="container__btn" type="button">Wszystkie</button>
+              <button class="container-button" type="button">Wszystkie</button>
             </li>
             <li>
-              <button class="container__btn" type="button">Strony</button>
+              <button class="container-button" type="button">Strony</button>
             </li>
             <li>
-              <button class="container__btn" type="button">Aplikacje</button>
+              <button class="container-button" type="button">Aplikacje</button>
             </li>
             <li>
-              <button class="container__btn" type="button">Dizajn</button>
+              <button class="container-button" type="button">Dizajn</button>
             </li>
             <li>
-              <button class="container__btn" type="button">Marketing</button>
+              <button class="container-button" type="button">Marketing</button>
             </li>
           </ul>
         </div>
 
         <!--OFFER-->
 
-        <div class="container__section--fixed">
-          <ul class="photo__list">
-            <li class="photo__project">
-              <div class="photo__overlay">
+        <div class="container">
+          <ul class="photo-list">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img7.jpg"
                   width="370"
                   height="294"
                   alt="Technocrack - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -115,21 +111,21 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Technocrack</h3>
-                <p class="photo__text">Strona internetowa</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Technocrack</h3>
+                <p class="photo-text">Strona internetowa</p>
               </div>
             </li>
-            <li class="photo__project">
-              <div class="photo__container">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img8.jpg"
                   width="370"
                   height="294"
                   alt="Grafika New Orlean vs Golden Star - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -138,21 +134,21 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Grafika New Orlean vs Golden Star</h3>
-                <p class="photo__text">Dizajn</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Grafika New Orlean vs Golden Star</h3>
+                <p class="photo-text">Dizajn</p>
               </div>
             </li>
-            <li class="photo__project">
-              <div class="photo__overlay">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img9.jpg"
                   width="370"
                   height="294"
                   alt="Restauracja Seafood - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -161,22 +157,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Restauracja Seafood</h3>
-                <p class="photo__text">Aplikacja</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Restauracja Seafood</h3>
+                <p class="photo-text">Aplikacja</p>
               </div>
             </li>
 
-            <li class="project__photo">
-              <div class="overlay__container">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img10.jpg"
                   width="370"
                   height="294"
                   alt="Projekt Prime-foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -185,22 +181,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__order">
-                <h3 class="photo__header">Projekt Prime</h3>
-                <p class="photo-__text">Marketing</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Projekt Prime</h3>
+                <p class="photo-text">Marketing</p>
               </div>
             </li>
 
-            <li class="project__photo">
-              <div class="overlay__container">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img11.jpg"
                   width="370"
                   height="294"
                   alt="Projekt Boxes - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -209,22 +205,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Projekt Boxes</h3>
-                <p class="photo__text">Aplikacja</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Projekt Boxes</h3>
+                <p class="photo-text">Aplikacja</p>
               </div>
             </li>
 
-            <li class="project__photo">
+            <li class="project-photo">
               <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img12.jpg"
                   width="370"
                   height="294"
                   alt="Inspiration has no Borders - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -233,22 +229,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Inspiration has no Borders</h3>
-                <p class="photo__text">Strona internetowa</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Inspiration has no Borders</h3>
+                <p class="photo-text">Strona internetowa</p>
               </div>
             </li>
 
-            <li class="project__photo">
-              <div class="overlay__container">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img13.jpg"
                   width="370"
                   height="294"
                   alt="Magazyn Limited Edition - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -257,22 +253,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Magazyn Limited Edition</h3>
-                <p class="photo__text">Dizajn</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Magazyn Limited Edition</h3>
+                <p class="photo-text">Dizajn</p>
               </div>
             </li>
 
-            <li class="project__photo">
+            <li class="project-photo">
               <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img14.jpg"
                   width="370"
                   height="294"
                   alt="Projekt LAB - foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -281,22 +277,22 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Projekt LAB</h3>
-                <p class="photo__text">Marketing</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Projekt LAB</h3>
+                <p class="photo-text">Marketing</p>
               </div>
             </li>
 
-            <li class="project__photo">
-              <div class="overlay__container">
+            <li class="project-photo">
+              <div class="overlay-container">
                 <img
-                  class="photo__item"
+                  class="photo-item"
                   src="./images/img15.jpg"
                   width="370"
                   height="294"
                   alt="Growing Business-foto"
                 />
-                <div class="photo__section">
+                <div class="overlay">
                   <p>
                     Technocrack jest popularną platformą wykorzystywaną do
                     rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -305,9 +301,9 @@
                   </p>
                 </div>
               </div>
-              <div class="photo__border">
-                <h3 class="photo__header">Growing Business</h3>
-                <p class="photo__text">Aplikacja</p>
+              <div class="photo-border">
+                <h3 class="photo-header">Growing Business</h3>
+                <p class="photo-text">Aplikacja</p>
               </div>
             </li>
           </ul>
@@ -317,19 +313,19 @@
     <!--FOOTER-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer__box">
+        <div class="footer-box">
           <p>
             <a class="logo" href="./index.html">
-              <span class="first__logo">Web</span
-              ><span class="second__logo">Studio</span></a
+              <span class="first-logo">Web</span
+              ><span class="second-logo">Studio</span></a
             >
           </p>
           <!--ADDRESS-->
-          <address class="address__item">
-            <ul class="address__list">
+          <address class="address-item">
+            <ul class="address-list">
               <li>
                 <a
-                  class="address__link"
+                  class="address-link"
                   href="https://goo.gl/maps/rMT2Ymf6yajYnDqk7"
                   rel="noopener noreferrer nofollow"
                 >
@@ -337,12 +333,12 @@
                 >
               </li>
               <li>
-                <a class="address__link" href="mailto:info@example.com"
+                <a class="address-link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="address__link" href="tel:+48111111111"
+                <a class="address-link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -350,29 +346,29 @@
           </address>
         </div>
 
-        <div class="footer__header">
-          <h3 class="footer__headerTop">dołącz do nas</h3>
-          <div class="footer__list">
-            <a href="#" class="footer__icons">
-              <svg width="20" height="20" class="footer__link">
+        <div class="footer-header">
+          <h3 class="footer-header-top">dołącz do nas</h3>
+          <div class="footer-list">
+            <a href="#" class="footer-link-icons">
+              <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__icons">
-              <svg width="20" height="20" class="footer__link">
+            <a href="#" class="footer-link-icons">
+              <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__icons">
-              <svg width="20" height="20" class="footer__link">
+            <a href="#" class="footer-link-icons">
+              <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
 
-            <a href="#" class="footer__icons">
-              <svg width="20" height="20" class="footer__link">
+            <a href="#" class="footer-link-icons">
+              <svg width="20" height="20" class="footer-link">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -381,27 +377,23 @@
 
         <!--newsletter-->
 
-        <div class="newsletter-__">
-          <h3 class="footer__formTop">Zapisz się do newslettera</h3>
-          <div class="footer__top">
+        <div class="newsletter-container">
+          <h3 class="footer-form-top">Zapisz się do newslettera</h3>
+          <div class="footer-top">
             <form>
               <label>
                 <input
-                  class="footer__input"
+                  class="footer-input"
                   type="email"
                   name="E-mail"
                   placeholder="E-mail "
                 />
               </label>
 
-              <button class="newsletter__btn" type="submit">
+              <button class="newsletter-btn" type="submit">
                 Zapisz się
 
-                <svg
-                  class="newsletter__icon newsletter__icon--end"
-                  width="24"
-                  height="24"
-                >
+                <svg class="newsletter-icon" width="24" height="24">
                   <use href="./images/icon.svg#icon-send"></use>
                 </svg>
               </button>
@@ -413,7 +405,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close__btn" data-modal-close>X</button>
+        <button type="button" class="close-btn" data-modal-close>X</button>
       </div>
     </div>
 
