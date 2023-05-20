@@ -176,9 +176,6 @@ body {
   border-radius: 2px;
 }
 
-.menu__active {
-  color: var(--object-primary-background-color);
-}
 .menu__active::after {
   background-color: var(--object-primary-background-color);
   content: "";
@@ -208,17 +205,27 @@ body {
 /* CONTACT */
 
 .contact {
+  color: var(--text-secondary-color);
   display: flex;
-  column-gap: 30px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  gap: 30px;
+  margin-left: auto;
 }
 
 .contact__item {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-secondary-color);
+  display: flex;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  gap: 30px;
+  margin-left: auto;
 }
 
 .contact__link {
