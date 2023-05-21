@@ -15,7 +15,7 @@
 }
 .address__item .address__link__item .address__item .address__link__link:hover,
 .address__item .address__link__item .address__item .address__link__link:focus {
-  color: var(--text-tertiary-color);
+  color: #fff;
 }
 .address__list {
   margin-top: 20px;
@@ -28,7 +28,7 @@
   flex-direction: column;
   row-gap: 9px;
 }
-.address__list .footer__header {
+.footer__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,8 +37,8 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.address__list__top {
-  color: var(--text-tertiary-color);
+.footer__header__top {
+  color: #fff;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -46,7 +46,7 @@
   padding-bottom: 20px;
   padding-top: 12px;
 }
-.address__list__list {
+.footer__header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,11 +55,11 @@
   justify-content: center;
   gap: 10px;
 }
-.address__list__link {
+.footer__header__link {
   display: block;
 }
-.address__list__icons {
-  fill: var(--social-links-secondary-icon-color);
+.footer__header__icons {
+  fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 12px;
@@ -70,15 +70,15 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__list__icons:hover,
-.address__list__icons:focus {
-  fill: var(--social-links-icon-hover-color);
+.footer__header__icons:hover,
+.footer__header__icons:focus {
+  fill: #fff;
   background-color: #2196f3;
   border-radius: 50%;
 }
-.address__list--link {
-  fill: var(--social-links-secondary-icon-color);
-  background-color: var(--social-links-footer-background-color);
+.footer__header--link {
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 12px;
   -webkit-transition-property: fill, background-color;
@@ -88,10 +88,10 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__list--link:hover,
-.address__list--link:focus {
-  fill: var(--social-links-icon-hover-color);
-  background-color: var(--social-links-primary-background-color);
+.footer__header--link:hover,
+.footer__header--link:focus {
+  fill: #fff;
+  background-color: #2196f3;
   border-radius: 50%;
 }
 .advantage {
@@ -727,11 +727,11 @@
   color: var(--text-tertiary-color);
   padding: 27px 0;
 }
-.team__section {
+.team {
   background-color: #f5f4fa;
   width: 100%;
 }
-.team__section__header {
+.team__header {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -739,7 +739,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.team__section__list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,7 +749,7 @@
   width: 100%;
   margin-top: 50px;
 }
-.team__section__item {
+.team__item {
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.1411764706),
@@ -759,10 +759,10 @@
     0px 1px 3px rgba(0, 0, 0, 0.1215686275);
   border-radius: 0px 0px 4px 4px;
 }
-.team__section__img {
+.team__img {
   display: block;
 }
-.team__section__top {
+.team__top {
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -771,7 +771,7 @@
   letter-spacing: 0.03em;
   margin: 30px auto 10px;
 }
-.team__section__text {
+.team__text {
   color: #757575;
   font-size: 16px;
   line-height: 1.2;
@@ -779,7 +779,7 @@
   letter-spacing: 0.03em;
   margin: 10px auto 16px;
 }
-.team__section__social {
+.team__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,13 +794,13 @@
   column-gap: 10px;
   padding-bottom: 30px;
 }
-.team__section__social:hover,
-.team__section__social:focus {
+.team__social:hover,
+.team__social:focus {
   fill: #fff;
   background-color: #2196f3;
   border-radius: 50%;
 }
-.team__section__link {
+.team__link {
   display: block;
   fill: #afb1b8;
   fill: #afb1b8;
@@ -813,7 +813,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px;
 }
-.team__section__icon {
+.team__icon {
   display: block;
 }
 h1,

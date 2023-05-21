@@ -302,7 +302,7 @@ body {
 
 /* OFFER */
 
-.offer__section {
+.offer section {
   background-color: var(--page-quarternary-background-color);
 }
 
@@ -350,7 +350,7 @@ body {
 }
 
 /* TEAM */
-.team__section {
+.team {
   background-color: var(--page-tertiary-background-color);
   width: 100%;
 }
