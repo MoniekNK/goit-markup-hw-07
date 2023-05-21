@@ -60,7 +60,6 @@
   &__link {
     display: block;
     fill: getColor("social-links-primary-icon-color");
-    fill: getColor("social-links-primary-icon-color");
     background-color: getColor("object-secondary-background-color");
     transition-property: fill, background-color, border-radius;
     transition-duration: 250ms;

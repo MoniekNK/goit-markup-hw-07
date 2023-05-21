@@ -858,7 +858,6 @@ form {
 .team__link {
   display: block;
   fill: #afb1b8;
-  fill: #afb1b8;
   background-color: #fff;
   -webkit-transition-property: fill, background-color, border-radius;
   transition-property: fill, background-color, border-radius;

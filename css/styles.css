@@ -411,7 +411,6 @@ body {
 .team__link {
   display: block;
   fill: var(--social-links-primary-icon-color);
-  fill: var(--social-links-primary-icon-color);
   background-color: var(--object-secondary-background-color);
   transition-property: fill, background-color, border-radius;
   transition-duration: 250ms;
