@@ -411,7 +411,7 @@ body {
 .team-social:hover,
 .team-social:focus {
   fill: var(--social-links-icon-hover-color);
-  background-color: #2196f3;
+  background-color: var(--social-links-primary-icon-color--);
   border-radius: 50%;
 }
 

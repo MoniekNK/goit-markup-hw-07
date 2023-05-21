@@ -59,7 +59,7 @@
     &:hover,
     &:focus {
       fill: getColor("social-links-icon-hover-color");
-      background-color: #2196f3;
+      background-color: getColor("social-links-primary-icon-color");
       border-radius: 50%;
     }
   }
