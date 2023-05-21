@@ -1,0 +1,42 @@
+.footer {
+  background-color: getColor("page-secondary-background-color");
+  text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__box {
+    flex-direction: column;
+    display: flex;
+    margin-right: 70px;
+  }
+}
+.logo {
+  color: getColor(-"text-quaternary-color");
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
+  &--set {
+    padding-left: 15px;
+  }
+
+  &__first {
+    color: getColor("object-primary-background-color");
+  }
+
+  &__second {
+    color: getColor("text-tertiary-color");
+  }
+
+  &__second--white {
+    color: getColor("text-tertiary-color");
+  }
+}

@@ -542,11 +542,6 @@ body {
   row-gap: 9px;
 }
 
-.address__link:hover,
-.address__link:focus {
-  color: var(--text-tertiary-color);
-}
-
 .footer__header {
   display: flex;
   flex-direction: column;
