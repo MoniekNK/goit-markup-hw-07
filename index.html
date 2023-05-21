@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <!--HEADER-->
@@ -69,7 +69,7 @@
           <h1 class="slogan__title">
             Efektywne rozwiązania dla waszego biznesu
           </h1>
-          <button class="slogan__btn" type="button" data__modalOpen>
+          <button class="slogan__btn" type="button" data-modal-open>
             Zamów usługe
           </button>
         </div>
@@ -143,7 +143,7 @@
           <h3 class="offer__header">Czym się zajmujemy</h3>
           <ul class="offer__list">
             <li class="offer__item">
-              <div class="image__title">
+              <div class="offer__title">
                 <img
                   class="offer__image"
                   src="images/img0.jpg"
@@ -151,14 +151,14 @@
                   height="294"
                   alt=""
                 />
-                <div class="image__text">
+                <div class="offer__text">
                   <p>Aplikacje komputerowe</p>
                 </div>
               </div>
             </li>
 
             <li class="offer__item">
-              <div class="image__title">
+              <div class="offer__title">
                 <img
                   class="offer__image"
                   src="images/img1.jpg"
@@ -166,14 +166,14 @@
                   height="294"
                   alt=""
                 />
-                <div class="image__text">
+                <div class="offer__text">
                   <p>Aplikacje mobilne</p>
                   <p></p>
                 </div>
               </div>
             </li>
             <li class="offer__item">
-              <div class="image__title">
+              <div class="offer__title">
                 <img
                   class="offer__image"
                   src="images/img2.jpg"
@@ -181,7 +181,7 @@
                   height="294"
                   alt=""
                 />
-                <div class="image__text">
+                <div class="offer__text">
                   <p>Rozwiązania graficzne</p>
                 </div>
               </div>
@@ -536,7 +536,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close__btn" data__modalClose>X</button>
+        <button type="button" class="close__btn" data-modal-close>X</button>
 
         <form class="modal__top">
           <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>

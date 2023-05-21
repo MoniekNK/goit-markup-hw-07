@@ -326,14 +326,14 @@ body {
   display: block;
 }
 
-.image__title {
+.offer__title {
   position: relative;
 }
 .offer__image {
   display: block;
 }
 
-.image__text {
+.offer__text {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
