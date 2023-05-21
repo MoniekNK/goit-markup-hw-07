@@ -662,7 +662,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.newsletter__container {
+.newsletter {
   margin-left: auto;
 }
 .newsletter__click {
@@ -876,36 +876,6 @@ form {
 .team__icon {
   display: block;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-svg {
-  display: block;
-}
-a {
-  margin: 0;
-  text-decoration: none;
-}
-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-}
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -920,6 +890,24 @@ body {
   align-items: center;
   height: 80px;
   position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .section {
   padding-top: 94px;

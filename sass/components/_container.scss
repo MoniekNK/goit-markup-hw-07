@@ -1,38 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-svg {
-  display: block;
-}
-
-a {
-  margin: 0;
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  color: getColor("text-primary-color");
-}
-
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -44,9 +9,4 @@ body {
     height: 80px;
     position: relative;
   }
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
