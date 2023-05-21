@@ -41,8 +41,8 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    background-color: var(--image-title-background-color);
-    color: var(--text-tertiary-color);
+    background-color: getColor("image-title-background-color");
+    color: getColor("text-tertiary-color");
     padding: 27px 0;
   }
 }
