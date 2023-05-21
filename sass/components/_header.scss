@@ -8,13 +8,6 @@
   border-bottom: 1px solid getColor("header-border-bottom-color");
 }
 
-.container--set {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  position: relative;
-}
-
 .logo {
   color: getColor("text-quaternary-color");
   font-family: "Raleway", sans-serif;
@@ -23,7 +16,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 24px;
 }
 
 .logo__color {
