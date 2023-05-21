@@ -90,8 +90,8 @@
   color: getColor("text-secondary-color");
   text-decoration: none;
 
-  .contact__item :hover,
-  .contact__item :focus {
+  .contact__item:hover,
+  .contact__item:focus {
     color: getColor("object-primary-background-color");
   }
 }
@@ -108,8 +108,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+  .contact__link a:hover,
+  .contact__link a:focus {
+    color: var(--object-primary-background-color);
+  }
+}
 .contact__icon {
   fill: getColor("parrent-color");
 }
