@@ -298,7 +298,7 @@
 .header__border {
   border-bottom: 1px solid #ececec;
 }
-.logo {
+.header .logo {
   color: #000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -307,13 +307,13 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo__color {
+.header .logo__color {
   color: #2196f3;
 }
-.logo__color--black {
+.header .logo__color--black {
   color: #000;
 }
-.menu {
+.header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,7 +325,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.menu__list {
+.header .menu__list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,11 +337,11 @@
   color: #212121;
   margin-left: 93px;
 }
-.menu__list--start {
+.header .menu__list--start {
   text-decoration: none;
   color: #212121;
 }
-.menu__link {
+.header .menu__link {
   text-decoration: none;
   color: #212121;
   -webkit-transition-property: color;
@@ -351,11 +351,11 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu__link:hover,
-.menu__link:focus {
+.header .menu__link:hover,
+.header .menu__link:focus {
   color: #2196f3;
 }
-.menu__link--active::after {
+.header .menu__link--active::after {
   background-color: #2196f3;
   content: "";
   display: block;
@@ -365,10 +365,10 @@
   width: 58px;
   border-radius: 2px;
 }
-.menu__link--active {
+.header .menu__link--active {
   color: #2196f3;
 }
-.contact {
+.header .contact {
   color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,15 +381,15 @@
   gap: 30px;
   margin-left: auto;
 }
-.contact__item {
+.header .contact__item {
   color: #757575;
   text-decoration: none;
 }
-.contact__item .contact__item:hover,
-.contact__item .contact__item:focus {
+.header .contact__item:hover,
+.header .contact__item:focus {
   color: #2196f3;
 }
-.contact__link {
+.header .contact__link {
   color: #757575;
   font-size: 14px;
   line-height: 1.14;
@@ -412,14 +412,14 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact__link .contact__link a:hover,
-.contact__link .contact__link a:focus {
+.header .contact__link:hover,
+.header .contact__link:focus {
   color: var(--object-primary-background-color);
 }
-.contact__icon {
+.header .contact__icon {
   fill: currentColor;
 }
-.slogan {
+.header .contact .slogan {
   background-color: #2f303a;
   background-image: url("../images/sloganimg.jpg"),
     -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
@@ -434,7 +434,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.slogan__title {
+.header .contact__title {
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
@@ -446,7 +446,7 @@
   margin: 0 auto;
   width: 696px;
 }
-.slogan__btn {
+.header .contact__btn {
   display: block;
   font-family: "Roboto";
   font-weight: 700;
@@ -901,6 +901,11 @@ h6,
 p,
 a {
   margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #e5e5e5;
 }
 a {
   text-decoration: none;

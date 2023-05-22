@@ -8,6 +8,11 @@ p,
 a {
   margin: 0;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  color: getColor("text-primary-color");
+  background-color: getColor("page-primary-background-color");
+}
 
 a {
   text-decoration: none;
