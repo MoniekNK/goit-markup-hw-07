@@ -602,8 +602,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submenu__btn:hover,
-.submenu__btn:focus {
+.submenu__buttons:hover,
+.submenu__buttons:focus {
   background-color: var(--object-primary-background-color);
   color: var(--object-secondary-background-color);
   box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
