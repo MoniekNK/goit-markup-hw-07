@@ -421,12 +421,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px;
+  border-radius: 50%;
 }
 .team__link:hover,
 .team__link:focus {
   fill: var(--social-links-icon-hover-color);
   background-color: var(--social-links-primary-background-color--);
-  border-radius: 50%;
 }
 
 .team__icon {
