@@ -125,6 +125,7 @@ body {
   list-style-type: none;
   display: flex;
   column-gap: 46px;
+  font-weight: 500;
   padding-left: 0;
   color: var(--text-primary-color);
   margin-left: 93px;
@@ -137,6 +138,7 @@ body {
 
 .menu__link {
   text-decoration: none;
+  font-weight: 500;
   color: var(--text-primary-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -228,7 +230,6 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 44px;
-  font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
