@@ -12,17 +12,45 @@
   z-index: 100;
 }
 
+.is-hidden {
+  transform: rotate(100deg);
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
 .modal {
   background-color: getColor("page-quarternary-background-color");
   position: absolute;
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
+  min-height: 582px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+&__top {
+  display: block;
+  padding: 40px;
+}
+
+&__header {
+  color: getColor("text-primary-color");
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .close__btn {
@@ -47,33 +75,6 @@
     }
   }
 }
-.is-hidden {
-  transform: rotate(100deg);
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.modal__top {
-  display: block;
-  padding: 40px;
-}
-
-.modal__header {
-  color: getColor("text-primary-color");
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  line-height: 1.15;
-  margin-bottom: 12px;
-}
-
-.form__label {
-  display: block;
-  position: relative;
-  margin-bottom: 10px;
-}
 
 .form__label input {
   width: 448px;
@@ -86,16 +87,15 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__label input:focus {
-  border-color: getColor("object-primary-background-color");
-}
+  & input:focus {
+    border-color: getColor("object-primary-background-color");
+  }
 
-.form__label input:focus svg {
-  fill: getColor("object-primary-background-color");
+  & input:focus svg {
+    fill: getColor("object-primary-background-color");
+  }
 }
-
 .form__label svg {
   position: absolute;
   left: 15px;
@@ -124,14 +124,6 @@
   color: getColor("text-secondary-color");
 }
 
-.modal__text {
-  fill: getColor("text-primary-color");
-  position: absolute;
-  display: block;
-  left: 15px;
-  top: 55%;
-}
-
 .modal__icon input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -143,6 +135,14 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__text {
+  fill: getColor("text-primary-color");
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 55%;
 }
 
 .form__text {
