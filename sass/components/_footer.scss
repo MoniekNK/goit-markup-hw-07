@@ -85,8 +85,8 @@
   }
 
   &__item {
-    fill: getColor("social-links-secondary-icon-color");
-    background-color: getColor("social-links-footer-background-color");
+    fill: getColor("social-links-primary-icon-color");
+    background-color: getColor("object-secondary-background-color");
     border-radius: 50%;
     padding: 12px;
     transition-property: fill, background-color;
