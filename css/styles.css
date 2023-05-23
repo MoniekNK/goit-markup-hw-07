@@ -903,7 +903,7 @@ body {
 
 .modal__links:hover,
 .modal__links:focus {
-  transform: scale(1.03);
+  transform: scale(1.1);
   font-weight: 400;
 }
 .modal__checkbox {
