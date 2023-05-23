@@ -306,24 +306,25 @@ body {
 
 /* OFFER */
 
-.offer__section {
+.offer {
   background-color: var(--page-quarternary-background-color);
 }
 
 .offer__header {
   color: var(--text-primary-color);
-  background-color: var(--page-quarternary-background-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   text-align: center;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+  background-color: var(--page-quarternary-background-color);
 }
+
 .offer__list {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 50px;
 }
 
 .offer__item {
@@ -334,22 +335,23 @@ body {
   position: relative;
 }
 .offer__image {
-  display: block;
+  position: relative;
 }
 
 .offer__text {
+  background-color: var(--image-title-background-color);
+  color: var(--text-tertiary-color);
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
   left: 0;
   right: 0;
   bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--image-title-background-color);
-  color: var(--text-tertiary-color);
+  text-transform: uppercase;
   padding: 27px 0;
 }
 

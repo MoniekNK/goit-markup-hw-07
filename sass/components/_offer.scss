@@ -3,19 +3,19 @@
 
   &__header {
     color: getColor("text-primary-color");
-    background-color: getColor("page-quarternary-background-color");
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
     text-align: center;
+    letter-spacing: 0.03em;
     margin-bottom: 50px;
+    background-color: getColor("page-quarternary-background-color");
   }
 
   &__list {
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 50px;
   }
 
   &__item {
@@ -25,24 +25,24 @@
   &__title {
     position: relative;
   }
-
   &__image {
-    display: block;
+    position: relative;
   }
 
   &__text {
+    background-color: getColor("image-title-background-color");
+    color: getColor("text-tertiary-color");
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
     left: 0;
     right: 0;
     bottom: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
     letter-spacing: 0.03em;
-    background-color: getColor("image-title-background-color");
-    color: getColor("text-tertiary-color");
+    text-transform: uppercase;
     padding: 27px 0;
   }
 }
