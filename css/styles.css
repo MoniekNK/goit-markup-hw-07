@@ -577,18 +577,17 @@ body {
 }
 
 .join__item {
-  fill: var(--social-links-secondary-icon-color);
-  background-color: var(--social-links-footer-background-color);
-  border-radius: 50%;
+  fill: var(--social-links-primary-icon-color);
+  background-color: var(--object-secondary-background-color);
   padding: 12px;
-  transition-property: fill, background-color;
+  transition-property: fill, background-color, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join__item:hover,
 .join__item:focus {
   fill: var(--social-links-icon-hover-color);
-  background-color: var(--social-links-primary-background-color);
+  background-color: #2196f3;
   border-radius: 50%;
 }
 
