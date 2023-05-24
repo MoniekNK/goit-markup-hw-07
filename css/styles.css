@@ -631,30 +631,22 @@ body {
 }
 
 /*CARDS*/
-
-.photo__list {
+.photo-list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   gap: 30px;
 }
 
-.photo__item {
-  flex-basis: calc((100% - 60px) / 3);
-  transition-property: box-shadow, cursor, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.photo__item:hover,
-.photo__item:focus {
+.project-photo:hover,
+.project-photo:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transform: translateY(0);
 }
 
-.photo__section {
+.overlay-container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -663,7 +655,7 @@ body {
   height: 294px;
 }
 
-.photo__img {
+.photo-item {
   display: block;
 }
 .overlay {
@@ -680,7 +672,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay__text {
+.overlay p {
   color: var(--text-tertiary-color);
   font-weight: 400;
   font-size: 18px;
@@ -689,37 +681,31 @@ body {
   padding: 49px 45px 49px 24px;
 }
 
-.overlay__container:hover .overlay {
+.overlay-container:hover .overlay {
   transform: translateX(0);
 }
 
-.photo__border {
+.photo-border {
   border: solid 1px;
   border-color: var(--border-color);
   border-top: 0;
   padding: 20px 24px;
 }
-.photo__header {
-  color: var(--text-primary-color);
+.photo-header {
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  padding: 20px 24px 4px;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
 }
 
-.photo__text {
+.photo-text {
   color: var(--text-secondary-color);
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  padding: 4px 24px 20px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
-
 /*newsletter*/
 
 /*MODAL WINDOW*/
