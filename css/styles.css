@@ -574,9 +574,10 @@ body {
 
 .join__icon {
   display: block;
+  fill: var(--social-links-icon-hover-color--);
 }
 .join__item {
-  fill: var(--social-links-primary-icon-color);
+  fill: var(--social-links-icon-hover-color);
   background-color: var(--object-secondary-background-color);
   padding: 12px;
   transition-property: fill, background-color, border-radius;
