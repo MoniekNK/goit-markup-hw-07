@@ -575,10 +575,9 @@ body {
 .join__icon {
   display: block;
 }
-
 .join__item {
   fill: var(--social-links-primary-icon-color);
-  background-color: var(--object-secondary-background-color);
+  background-color: var(--social-links-footer-background-color);
   padding: 12px;
   transition-property: fill, background-color, border-radius;
   transition-duration: 250ms;
@@ -586,8 +585,8 @@ body {
 }
 .join__item:hover,
 .join__item:focus {
-  fill: var(--social-links-icon-hover-color);
-  background-color: #2196f3;
+  fill: var(--social-links-primary-icon-color);
+  background-color: var("social-links-primary-background-color");
   border-radius: 50%;
 }
 
