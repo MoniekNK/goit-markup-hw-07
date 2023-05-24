@@ -574,6 +574,7 @@ body {
 
 .join__icon {
   display: block;
+  color: var(--social-links-secondary-icon-color);
 }
 .join__item {
   fill: var(--social-links-secondary-icon-color);
@@ -588,7 +589,7 @@ body {
 .join__item:focus {
   cursor: pointer;
   fill: var(--social-links-icon-hover-color);
-  background-color: #2196f3;
+  background-color: var(--overlay-background);
   border-radius: 50%;
 }
 

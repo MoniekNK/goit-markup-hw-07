@@ -82,6 +82,7 @@
 
   &__icon {
     display: block;
+    color: getColor("social-links-secondary-icon-color");
   }
 
   &__item {
@@ -93,11 +94,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .join__item:hover,
-    .join__item:focus {
+    &:hover,
+    &:focus {
       cursor: pointer;
       fill: getColor("social-links-icon-hover-color");
-      background-color: #2196f3;
+      background-color: getColor("social-links-primary-background-color");
       border-radius: 50%;
     }
   }
