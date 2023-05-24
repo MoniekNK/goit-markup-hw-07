@@ -655,7 +655,7 @@ body {
   height: 294px;
 }
 
-.photo-item {
+.photo__img {
   display: block;
 }
 .overlay {
@@ -692,19 +692,24 @@ body {
   padding: 20px 24px;
 }
 .photo__header {
+  color: var(--text-primary-color);
   font-size: 18px;
-  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-text-color);
-  margin-bottom: 4px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding: 20px 24px 4px;
 }
 
 .photo__text {
   color: var(--text-secondary-color);
   font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 4px 24px 20px;
 }
 
 /*newsletter*/
