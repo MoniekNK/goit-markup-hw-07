@@ -194,7 +194,7 @@
 }
 .join__item {
   fill: #afb1b8;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 12px;
   -webkit-transition-property: fill, background-color;
@@ -206,7 +206,6 @@
 }
 .join__item:hover,
 .join__item:focus {
-  fill: #fff;
   background-color: #2196f3;
   border-radius: 50%;
 }
@@ -472,44 +471,41 @@
 }
 .backdrop {
   position: fixed;
-  visibility: visible;
-  opacity: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--backdrop-background-color);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, transform, visibility;
   transition-property: opacity, transform, visibility, -webkit-transform;
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
-  z-index: 100;
 }
-.is-hidden {
+.backdrop .is-hidden {
   -webkit-transform: rotate(100deg);
   transform: rotate(100deg);
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
 }
-.modal {
-  background-color: #fff;
+.backdrop .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 }
-.close__btn {
+.backdrop .close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -528,33 +524,33 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close__btn:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+.backdrop .close__btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.close__btn:active {
+.backdrop .close__btn .close__btn:active {
   -webkit-transform: rotate(100deg);
   transform: rotate(100deg);
 }
-.modal__form {
+.backdrop .modal__form {
   display: block;
   padding: 40px;
 }
-.modal__form__header {
-  color: #212121;
-  text-align: center;
-  font-weight: 700;
+.backdrop__header {
   font-size: 20px;
+  line-height: 23px;
+  text-align: center;
   letter-spacing: 0.03em;
-  line-height: 1.15;
+  padding-top: 40px;
   margin-bottom: 12px;
+  color: #212121;
 }
-.modal__form__label {
+.backdrop .form__label {
   display: block;
   position: relative;
   margin-bottom: 10px;
 }
-.modal__form input {
+.backdrop__label input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -569,13 +565,13 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form input:focus {
+.backdrop input:focus {
   border-color: #2196f3;
 }
-.modal__form input:focus svg {
+.backdrop input:focus svg {
   fill: #2196f3;
 }
-.modal__form__label svg {
+.backdrop svg {
   position: absolute;
   left: 15px;
   fill: #212121;
@@ -586,11 +582,10 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form__label input:focus + .modal__text {
+.backdrop input:focus + .modal__text {
   fill: #2196f3;
 }
-.modal__form__text {
-  color: #757575;
+.backdrop .modal__label {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
@@ -607,23 +602,22 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
+  color: #757575;
 }
-.modal__form__icon {
+.backdrop__text {
   fill: #212121;
   position: absolute;
   display: block;
   left: 15px;
   top: 55%;
 }
-.modal__form__input input {
+.backdrop__icon input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
   height: 40px;
   margin-top: 4px;
   padding-left: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   outline: none;
   -webkit-transition-property: border-color;
   transition-property: border-color;
@@ -632,7 +626,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form__textarea {
+.backdrop__text {
   resize: none;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -650,28 +644,28 @@
   margin-top: 4px;
   padding: 12px 16px;
 }
-.modal__form__textarea:focus {
+.backdrop__text:focus {
   border-color: #2196f3;
 }
-.modal__form__textarea::-webkit-input-placeholder {
+.backdrop::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__form__textarea::-moz-placeholder {
+.backdrop::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__form__textarea:-ms-input-placeholder {
+.backdrop:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__form__textarea::-ms-input-placeholder {
+.backdrop::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__form__textarea::placeholder {
+.backdrop::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__form__textarea textarea:focus {
+.backdrop textarea:focus {
   border-color: #2196f3;
 }
-.modal__form__links {
+.backdrop .modal__links {
   text-decoration: underline;
   color: #2196f3;
   -webkit-transition-property: font-weight, -webkit-transform;
@@ -683,13 +677,13 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form__links:hover,
-.modal__form__links:focus {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.backdrop .modal__links:hover,
+.backdrop .modal__links:focus {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
   font-weight: 400;
 }
-.modal__form__checkbox {
+.backdrop .modal__checkbox {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -699,14 +693,14 @@
   display: inline-block;
   cursor: pointer;
 }
-.modal__form__text {
+.backdrop .checkbox__text {
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 28px;
 }
-.modal__form__check {
+.backdrop .modal__check {
   position: absolute;
   top: 0;
   left: 0;
@@ -717,12 +711,12 @@
   top: 0;
   margin-left: 15px;
 }
-.modal__form__box {
+.backdrop__box {
   position: absolute;
   border-radius: 2px;
   margin-left: 15px;
 }
-.modal__form__btn {
+.backdrop__btn {
   color: #fff;
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -942,7 +936,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submenu__btn {
+.submenu__buttons__btn {
   background-color: #f5f4fa;
   color: #212121;
   border: 0;
@@ -963,8 +957,8 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submenu__btn:hover,
-.submenu__btn:focus {
+.submenu__buttons__btn:hover,
+.submenu__buttons__btn:focus {
   background-color: #2196f3;
   color: #fff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1490196078);

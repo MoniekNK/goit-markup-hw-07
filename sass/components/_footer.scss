@@ -86,7 +86,7 @@
 
   &__item {
     fill: getColor("social-links-primary-icon-color");
-    background-color: getColor("object-secondary-background-color");
+    background-color: getColor("social-links-footer-background-color");
     border-radius: 50%;
     padding: 12px;
     transition-property: fill, background-color;
@@ -95,7 +95,7 @@
 
     &:hover,
     &:focus {
-      fill: getColor("social-links-icon-hover-color");
+      fill: getColor("ocial-links-primary-icon-color");
       background-color: getColor("social-links-primary-background-color");
       border-radius: 50%;
     }
