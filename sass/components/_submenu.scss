@@ -1,4 +1,11 @@
+.submenu {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
 .submenu__buttons {
+  font-weight: 500;
   display: flex;
   justify-content: center;
   column-gap: 8px;
