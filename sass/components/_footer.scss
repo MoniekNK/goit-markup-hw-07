@@ -86,16 +86,15 @@
 
   &__item {
     fill: getColor("social-links-primary-icon-color");
-    background-color: getColor("social-links-footer-background-color");
-    border-radius: 50%;
+    background-color: getColor("object-secondary-background-color");
     padding: 12px;
-    transition-property: fill, background-color;
+    transition-property: fill, background-color, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      fill: getColor("social-links-primary-icon-color");
+      fill: getColor("social-links-icon-hover-color");
       background-color: getColor("social-links-primary-background-color");
       border-radius: 50%;
     }

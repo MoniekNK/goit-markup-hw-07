@@ -577,7 +577,7 @@ body {
 }
 .join__item {
   fill: var(--social-links-primary-icon-color);
-  background-color: var(--social-links-footer-background-color);
+  background-color: var(--object-secondary-background-color);
   padding: 12px;
   transition-property: fill, background-color, border-radius;
   transition-duration: 250ms;
@@ -585,8 +585,8 @@ body {
 }
 .join__item:hover,
 .join__item:focus {
-  fill: var(--social-links-primary-icon-color);
-  background-color: var("social-links-primary-background-color");
+  fill: var(--social-links-icon-hover-color);
+  background-color: #2196f3;
   border-radius: 50%;
 }
 
