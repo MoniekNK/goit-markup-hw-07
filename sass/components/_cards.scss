@@ -18,7 +18,7 @@
       transform: translateY(0);
     }
   }
-  .overlay__container {
+  .photo__section {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +49,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .overlay__text {
+  .overlay p {
     color: getColor("text-tertiary-color");
     font-weight: 400;
     font-size: 18px;
@@ -58,7 +58,7 @@
     padding: 49px 45px 49px 24px;
   }
 
-  .overlay__container:hover .overlay {
+  .photo__section:hover .overlay {
     transform: translateX(0);
   }
 

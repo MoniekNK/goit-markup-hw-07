@@ -652,7 +652,7 @@ body {
   transform: translateY(0);
 }
 
-.overlay__container {
+.photo__section {
   position: relative;
   margin-left: auto;
   margin-right: auto;
