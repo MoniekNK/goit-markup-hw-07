@@ -19,7 +19,6 @@
       referrerpolicy="no-referrer"
     />
     <link href="css/main.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!--HEADER-->
@@ -542,7 +541,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close__btn" data-modal-close>X</button>
+        <button type="button" class="modal__close" data-modal-close>X</button>
 
         <form class="modal__form">
           <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
@@ -601,7 +600,7 @@
             <input
               type="checkbox"
               value="terms"
-              class="modal__checkboxInput"
+              class="modal-checkbox-input"
               id="checkbox"
             />
             <span class="checkbox__text">
@@ -618,9 +617,7 @@
             </svg>
           </label>
 
-          <div class="modal__button">
-            <button class="modal__btn" type="submit">Wyślij</button>
-          </div>
+          <button class="modal__btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

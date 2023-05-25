@@ -595,7 +595,7 @@ body {
 
 /*PORTFOLIO*/
 
-.submenu__containers {
+.submenu {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 50px;
@@ -727,7 +727,6 @@ body {
 /*newsletter*/
 
 /*MODAL WINDOW*/
-
 .backdrop {
   position: fixed;
   visibility: visible;
@@ -762,14 +761,14 @@ body {
   border-radius: 4px;
 }
 
-.close__btn {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition-property: transform;
@@ -777,10 +776,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close__btn:hover {
-  transform: scale(1.1);
+.modal__close:hover {
+  transform: scale(1.5);
 }
-.close__btn:active {
+.modal__close:active {
   transform: rotate(100deg);
 }
 
@@ -799,7 +798,6 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.15;
   margin-bottom: 12px;
-  padding-top: 40px;
 }
 
 .form__label {
@@ -824,7 +822,7 @@ body {
   border-color: var(--object-primary-background-color);
 }
 
-.form__label input:focus svg {
+.form__label input:focus + svg {
   fill: var(--object-primary-background-color);
 }
 
@@ -837,9 +835,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__label input:focus + .modal__text {
-  fill: var(--object-primary-background-color);
-}
 .modal__label {
   color: var(--text-secondary-color);
   font-size: 12px;
@@ -928,10 +923,13 @@ body {
 
 .checkbox__text {
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(----text-secondary-color);
-  margin-bottom: 28px;
+  color: getColor("text-secondary-color");
+  margin-left: 7px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .modal__check {
