@@ -595,6 +595,12 @@ body {
 
 /*PORTFOLIO*/
 
+.submenu__containers {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
 .submenu__buttons {
   display: flex;
   justify-content: center;
@@ -661,6 +667,7 @@ body {
 }
 .overlay {
   background-color: var(--overlay-background-color);
+  color: var(--text-tertiary-color);
   position: absolute;
   left: 0;
   top: 294px;
@@ -671,7 +678,6 @@ body {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--text-tertiary-color);
   transform: translateY(0);
   transition-property: transform;
   transition-duration: 250ms;

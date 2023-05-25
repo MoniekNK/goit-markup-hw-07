@@ -920,6 +920,11 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.submenu__containers {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
 .submenu__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,11 +999,12 @@ ul {
   width: 370px;
   height: 294px;
 }
-.photo__img {
+.photo__section__img {
   display: block;
 }
-.overlay {
+.photo__section .overlay {
   background-color: rgba(33, 150, 243, 0.8980392157);
+  color: #fff;
   position: absolute;
   left: 0;
   top: 294px;
@@ -1009,7 +1015,6 @@ ul {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #fff;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition-property: -webkit-transform;
@@ -1021,7 +1026,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay p {
+.photo__section .overlay p {
   color: #fff;
   font-weight: 400;
   font-size: 18px;
@@ -1029,7 +1034,7 @@ ul {
   line-height: 1.6;
   padding: 49px 45px 49px 24px;
 }
-.photo__section :hover .overlay {
+.photo__section .photo__section:hover .overlay {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
