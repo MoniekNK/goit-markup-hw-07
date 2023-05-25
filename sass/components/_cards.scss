@@ -51,9 +51,10 @@
       line-height: 1.6;
       padding: 49px 45px 49px 24px;
     }
-  }
-  .photo__section:hover .overlay {
-    transform: translateX(0);
+
+    .photo__section:hover .overlay {
+      transform: translateX(0);
+    }
   }
 }
 
