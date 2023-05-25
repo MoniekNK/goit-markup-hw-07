@@ -768,7 +768,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition-property: transform;
@@ -834,17 +834,22 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__label input:focus + .modal__text {
+  fill: var(--object-primary-background-color);
+}
+
 .modal__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: getColor("text-secondary-color");
+  color: var(--text-secondary-color);
 }
 
 .modal__icon {
