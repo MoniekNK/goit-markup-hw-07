@@ -692,7 +692,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  transform: translateY(0);
+  transform: translateY(100);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
