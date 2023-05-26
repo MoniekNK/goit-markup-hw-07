@@ -523,7 +523,7 @@ body {
 
 /* ADDRESS */
 
-.address__item .address__link {
+.address__item {
   color: var(--alpha-color);
   font-size: 14px;
   line-height: 1.71;
@@ -538,6 +538,19 @@ body {
 .address__item .address__link:hover,
 .address__item .address__link:focus {
   color: var(--text-tertiary-color);
+}
+
+.address__link {
+  color: var(text-tertiary-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  gap: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__list {
@@ -654,6 +667,10 @@ body {
   height: 294px;
 }
 
+.photo__section:hover .overlay {
+  transform: translateX(0);
+}
+
 .photo__img {
   display: block;
 }
@@ -683,10 +700,6 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.6;
   padding: 49px 45px 49px 24px;
-}
-
-.photo__section:hover .overlay {
-  transform: translateX(0);
 }
 
 .photo__border {
