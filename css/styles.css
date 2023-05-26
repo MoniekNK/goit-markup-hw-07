@@ -702,7 +702,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  transform: translateY(100);
+  transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -727,6 +727,7 @@ body {
   color: var(--text-primary-color);
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
