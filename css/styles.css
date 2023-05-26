@@ -557,6 +557,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: flex;
   text-decoration: none;
   font-style: normal;
   gap: 9px;
@@ -709,12 +710,11 @@ body {
 }
 
 .overlay__text {
-  color: var(--text-tertiary-color);
-  font-weight: 400;
-  font-size: 18px;
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
-  line-height: 1.6;
-  padding: 49px 45px 49px 24px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .photo__border {
