@@ -525,7 +525,6 @@ body {
 
 .address__list {
   margin-top: 20px;
-  padding-left: 15px;
   display: flex;
   flex-direction: column;
   row-gap: 9px;
@@ -543,7 +542,6 @@ body {
 
 .address__item {
   color: var(--alpha-color);
-  margin-top: 9px;
   margin-left: 0px;
   font-weight: 400;
   display: flex;
