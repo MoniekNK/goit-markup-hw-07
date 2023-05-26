@@ -731,7 +731,6 @@ body {
   letter-spacing: 0.06em;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-  padding: 20px 24px 4px;
 }
 
 .photo__text {
@@ -742,7 +741,6 @@ body {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  padding: 4px 24px 20px;
 }
 
 /*newsletter*/
