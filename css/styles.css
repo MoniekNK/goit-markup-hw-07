@@ -542,7 +542,7 @@ body {
 
 .address__item {
   color: var(--alpha-color);
-  margin-left: 0px;
+  margin-top: 9px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
