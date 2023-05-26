@@ -151,7 +151,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__link {
+.address__list__link {
   color: var(text-tertiary-color);
   font-size: 14px;
   line-height: 1.71;
@@ -166,11 +166,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__link:hover,
-.address__link:focus {
-  color: #fff;
-}
-.address__item {
+.address__list__item {
   color: var(--alpha-color);
   margin-top: 20px;
   padding-left: 15px;
@@ -189,6 +185,10 @@
   transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__list__item:hover,
+.address__list__item:focus {
+  color: #fff;
 }
 .join {
   display: -webkit-box;
