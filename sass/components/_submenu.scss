@@ -14,7 +14,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .submenu__btn {
+  &__btn {
     background-color: getColor("page-tertiary-background-color");
     color: var(--text-primary-color);
     border: 0;
