@@ -731,6 +731,7 @@ body {
   letter-spacing: 0.06em;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
+  margin-bottom: 4px;
 }
 
 .photo__text {
