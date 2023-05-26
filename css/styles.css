@@ -663,6 +663,16 @@ body {
   gap: 30px;
 }
 
+.photo__project:hover .overlay {
+  transform: translateX(0);
+}
+
+.photo__project {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .photo__section {
   position: relative;
   margin-left: auto;
