@@ -4,14 +4,14 @@
   padding-left: 0;
   gap: 30px;
 
-  &__project:hover .overlay {
-    transform: translateX(0);
-  }
-
   &__project {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__project:hover .overlay {
+    transform: translateX(0);
   }
 
   &__section {
@@ -53,7 +53,6 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    border-bottom: 1px solid getColor("border-color");
   }
 
   .overlay {
