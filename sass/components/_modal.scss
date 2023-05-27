@@ -125,14 +125,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-  }
-
   &__form textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
@@ -149,7 +141,7 @@
   &__checkboxInput {
     opacity: 0;
   }
-  &__checkbox-label {
+  &__checkboxLabel {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -202,22 +194,55 @@
     }
   }
 
-  &__btn {
-    color: getColor("text-tertiary-color");
-    background: getColor("object-primary-background-color");
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    letter-spacing: 0.06em;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: getColor("text-secondary-color");
+    margin-bottom: 28px;
+
+    .modal__links {
+      text-decoration: underline;
+      color: getColor("object-primary-background-color");
+      transition-property: transform, font-weight;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__click {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 15px;
+      visibility: hidden;
+      border-radius: 2px;
+      top: 0;
+      margin-left: 15px;
+    }
+
+    &__clickBox {
+      position: absolute;
+      border-radius: 2px;
+      margin-left: 15px;
+    }
+
+    &__btn {
+      color: getColor("text-tertiary-color");
+      background: getColor("object-primary-background-color");
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      width: 200px;
+      height: 50px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      letter-spacing: 0.06em;
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }

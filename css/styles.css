@@ -909,6 +909,7 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+
 [type="checkbox"] + .modal__checkboxLabel::before {
   content: "";
   position: absolute;
@@ -949,6 +950,38 @@ body {
   background-size: contain;
   transform: scale(0);
   opacity: 0;
+}
+
+.checkbox__text {
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+  color: var(----text-secondary-color);
+  margin-bottom: 28px;
+}
+.modal__links {
+  text-decoration: underline;
+  color: var(--object-primary-background-color);
+  transition-property: transform, font-weight;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__click {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+  border-radius: 2px;
+  top: 0;
+  margin-left: 15px;
+}
+
+.modal__clickBox {
+  position: absolute;
+  border-radius: 2px;
+  margin-left: 15px;
 }
 
 .modal__btn {
