@@ -720,6 +720,7 @@ body {
   border-top: 0;
   padding: 20px 24px;
   border: 1px solid getColor("border-color");
+  border-top: none;
 }
 .photo__header {
   color: var(--text-primary-color);
