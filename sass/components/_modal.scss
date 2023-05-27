@@ -53,6 +53,7 @@
     }
   }
   &__label {
+    color: getColor("text-secondary-color");
     display: flex;
     flex-direction: column;
     padding-left: 40px;
@@ -62,9 +63,9 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: getColor("text-secondary-color");
   }
   &__header {
+    color: getColor("text-primary-color");
     padding-top: 40px;
     text-align: center;
     font-weight: 700;
@@ -72,7 +73,6 @@
     letter-spacing: 0.03em;
     line-height: 1.15;
     margin-bottom: 12px;
-    color: getColor("text-primary-color");
   }
 
   &__input input {
@@ -81,6 +81,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     outline: none;
     transition-property: border-color;
     transition-duration: 250ms;
