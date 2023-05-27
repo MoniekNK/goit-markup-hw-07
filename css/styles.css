@@ -798,6 +798,19 @@ body {
 .modal__close:active {
   transform: rotate(100deg);
 }
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary-color);
+}
 .modal__header {
   padding-top: 40px;
   font-weight: 700;
@@ -805,27 +818,10 @@ body {
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 40px;
   margin-bottom: 12px;
   color: var(--text-primary-color);
 }
 
-.modal__form textarea {
-  resize: none;
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-top: 4px;
-  padding: 12px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  outline: none;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal__input input {
   width: 448px;
   height: 40px;
@@ -860,17 +856,35 @@ body {
   fill: var(--object-primary-background-color);
 }
 
-.modal__label {
-  display: flex;
-  flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 10px;
-  font-weight: 400;
+.modal__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+.modal__form textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--text-secondary-color);
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__form textarea:focus {
+  border-color: var(--object-primary-background-color);
 }
 
 .modal__checkboxParagraph {
@@ -878,6 +892,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-left: 77px;
 }
 .modal__checkboxInput {
   opacity: 0;
