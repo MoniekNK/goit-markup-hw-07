@@ -886,6 +886,7 @@ body {
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--text-secondary-color);
   margin-bottom: 28px;
   position: relative;
