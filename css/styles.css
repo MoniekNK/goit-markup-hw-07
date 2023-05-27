@@ -798,6 +798,15 @@ body {
 .modal__close:active {
   transform: rotate(100deg);
 }
+.modal__header {
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+  margin-bottom: 12px;
+  color: var(--text-primary-color);
+}
 
 .modal__form textarea {
   resize: none;
@@ -815,37 +824,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__form textarea:focus {
-  border-color: var(--object-primary-background-color);
-}
-
-.modal__header {
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-top: 40px;
-  margin-bottom: 12px;
-  color: var(--text-primary-color);
-}
-
-.modal__label {
-  display: flex;
-  flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--text-secondary-color);
-}
-
 .modal__input input {
   width: 448px;
   height: 40px;
@@ -878,7 +856,20 @@ body {
   fill: var(--object-primary-background-color);
 }
 
-.modal__checkbox-paragraph {
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary-color);
+}
+
+.modal__checkboxParagraph {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -887,7 +878,7 @@ body {
 .modal__checkboxInput {
   opacity: 0;
 }
-.modal__checkbox-label {
+.modal__checkboxLabel {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -897,7 +888,7 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-[type="checkbox"] + .modal__checkbox-label::before {
+[type="checkbox"] + .modal__checkboxLabel::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -908,11 +899,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-[type="checkbox"]:focus + .modal__checkbox-label::before {
+[type="checkbox"]:focus + .modal__checkboxLabel::before {
   outline: 4px;
   outline-color: var(--object-primary-background-color);
 }
-[type="checkbox"]:checked + .modal__checkbox-label::after {
+[type="checkbox"]:checked + .modal__checkboxLabel::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -926,7 +917,7 @@ body {
   transition-property: transform, opacity;
   transition-duration: 0.3s;
 }
-[type="checkbox"]:not(:checked) + .modal__checkbox-label::after {
+[type="checkbox"]:not(:checked) + .modal__checkboxLabel::after {
   content: "";
   position: absolute;
   width: 16px;

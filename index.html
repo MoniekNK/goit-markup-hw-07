@@ -542,86 +542,61 @@
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>X</button>
 
+        <h3 class="modal__header">Zostaw swoje dane w formularzu poniżej</h3>
         <form class="modal__form">
-          <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
+          <div class="modal__input">
+            <label class="modal__label">
+              Imię
+              <input type="text" name="modal_username" />
+              <svg width="20" height="20">
+                <use href="./images/icon.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
 
+          <div class="modal__input">
+            <label class="modal__label">
+              Telefon
+              <input type="tel" name="modal_telephone" />
+              <svg width="20" height="20">
+                <use href="./images/icon.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
+
+          <div class="modal__input">
+            <label class="modal__label">
+              Email
+              <input type="email" name="modal_email" />
+              <svg width="20" height="20">
+                <use href="./images/icon.svg#icon-email"></use>
+              </svg>
+            </label>
+          </div>
           <label class="modal__label">
-            <span class="modal__text">Imię</span>
-            <svg width="20" height="20" class="modal__icon">
-              <use href="./images/icon.svg#icon-person"></use>
-            </svg>
-            <input
-              type="text"
-              name="username"
-              class="modal__input"
-              minlength="3"
-              required
-            />
-          </label>
-
-          <label class="form__label">
-            <span class="modal__text">Telefon</span>
-            <svg width="20" height="20" class="modal__icon">
-              <use href="./images/icon.svg#icon-phone"></use>
-            </svg>
-            <input
-              type="tel"
-              name="phone-number"
-              class="modal__input"
-              required
-            />
-          </label>
-
-          <label class="form__label">
-            <span class="modal__text">Email</span>
-            <svg width="20" height="20" class="modal__icon">
-              <use href="./images/icon.svg#icon-email"></use>
-            </svg>
-            <input
-              type="email"
-              name="modal_email"
-              class="modal__input"
-              required
-            />
-          </label>
-
-          <label class="form__label">
-            <span class="modal__text">Komentarz</span>
+            Komentarz
             <textarea
-              name="comment"
+              name="modal-comment"
               rows="5"
-              class="modal__textarea"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-
-          <label class="modal__checkbox" for="checkbox">
-            <span class="checkbox__text">
-              Oświadczam, że akceptuję
-              <a href="#" class="modal__links"> Regulamin </a> i
-              <a href="#" class="modal__links"> Politykę Prywatności.</a>
-            </span>
+          <p class="modal__checkboxParagraph">
             <input
-              type="checkbox"
-              value="terms"
               class="modal__checkboxInput"
-              id="checkbox"
+              type="checkbox"
+              id="statute-accept"
+              name="statute"
             />
-
-            <svg width="16px" height="15px" class="modal__check">
-              <use href="./images/#Rectangle-11"></use>
-            </svg>
-
-            <svg width="16px" height="15px" class="modal__box">
-              <use href="./images/Vector-14"></use>
-            </svg>
-          </label>
-
-          <button class="modal__btn" type="submit">Wyślij</button>
+            <label for="statute-accept" class="modal__checkboxLabel">
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a></label
+            >
+          </p>
+          <button class="modal__button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
