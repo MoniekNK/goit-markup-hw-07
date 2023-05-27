@@ -560,6 +560,7 @@ body {
   display: flex;
   text-decoration: none;
   font-style: normal;
+  font-weight: 400;
   gap: 9px;
   transition-property: color;
   transition-duration: 250ms;
