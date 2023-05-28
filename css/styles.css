@@ -822,6 +822,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.03em;
   line-height: 1.15;
+  margin-bottom: 12px;
   padding-top: 40px;
 }
 
@@ -952,6 +953,27 @@ body {
   transition-property: transform, font-weight;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__click {
+  position: absolute;
+  border-radius: 2px;
+  margin-left: 15px;
+}
+
+.modal__clickBox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+.modal__checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
 }
 
 .modal__btn {
