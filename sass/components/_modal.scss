@@ -56,8 +56,6 @@
     color: getColor("text-secondary-color");
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 12px;
@@ -132,12 +130,6 @@
     border-color: getColor("object-primary-background-color");
   }
 
-  &__checkboxParagraph {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
   &__checkboxInput {
     opacity: 0;
   }
@@ -198,6 +190,7 @@
     font-size: 14px;
     line-height: 1.46;
     letter-spacing: 0.03em;
+    font-weight: 400;
     color: getColor("text-secondary-color");
     margin-bottom: 28px;
 
