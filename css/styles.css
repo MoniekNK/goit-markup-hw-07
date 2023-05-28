@@ -972,13 +972,6 @@ body {
   border-radius: 2px;
   margin-left: 15px;
 }
-.modal__checkboxInput {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-}
 
 .modal__btn {
   color: getColor("text-tertiary-color");
