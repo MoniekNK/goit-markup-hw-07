@@ -842,8 +842,7 @@ body {
 }
 .modal__input svg {
   position: absolute;
-  left: 15px;
-  top: 27px;
+  left: 15px 14px;
   fill: var(--text-primary-color);
   transition-property: fill;
   transition-duration: 250ms;
@@ -852,14 +851,6 @@ body {
 
 .modal__input input:focus + svg {
   fill: var(--object-primary-background-color);
-}
-
-.modal__input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  width: 0;
-  height: 0;
 }
 
 .modal__form {
@@ -994,7 +985,4 @@ body {
   margin-right: auto;
   margin-top: 30px;
   letter-spacing: 0.06em;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

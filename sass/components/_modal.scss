@@ -95,8 +95,7 @@
   }
   &__input svg {
     position: absolute;
-    left: 55px;
-    top: 27px;
+    left: 15px 14px;
     fill: getColor("text-primary-color");
     transition-property: fill;
     transition-duration: 250ms;
@@ -239,9 +238,6 @@
       margin-right: auto;
       margin-top: 30px;
       letter-spacing: 0.06em;
-      transition-property: transform;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
