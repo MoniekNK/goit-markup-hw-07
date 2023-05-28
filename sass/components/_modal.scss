@@ -90,7 +90,7 @@
   &__input input:focus {
     border-color: getColor("object-primary-background-color");
   }
-  &__input {
+  &ot {
     position: relative;
   }
   &__input svg {
@@ -106,6 +106,12 @@
   &__input input:focus + svg {
     fill: getColor("object-primary-background-color");
   }
+
+  .modal__form {
+    display: block;
+    padding: 40px;
+  }
+
   &__form textarea {
     resize: none;
     width: 448px;
