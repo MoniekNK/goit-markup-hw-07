@@ -582,26 +582,29 @@
             ></textarea>
           </label>
 
-          <input
-            class="modal__checkboxInput"
-            type="checkbox"
-            id="statute-accept"
-            name="statute"
-          />
-          <span class="checkbox__text">
-            Oświadczam, że akceptuję
-            <a href="#" class="modal__links"> Regulamin </a> i
-            <a href="#" class="modal__links"> Politykę Prywatności.</a>
-          </span>
-          <svg width="16px" height="15px" class="modal__click">
-            <use href="./images/#Rectangle-11"></use>
-          </svg>
+          <label class="modal__checkbox" for="checkbox"
+            ><span class="modal__checkboxText">
+              Oświadczam, że akceptuję
+              <a href="#" class="modal__link"> Regulamin </a> i
+              <a href="#" class="modal__link"> Politykę Prywatności.</a>
+            </span>
+            <input
+              type="checkbox"
+              value="terms-conditions"
+              class="modal__checkboxInput"
+              id="checkbox"
+            />
+            <svg width="16px" height="15px" class="modal__click">
+              <use href="./images/#Rectangle-11"></use>
+            </svg>
 
-          <svg width="16px" height="15px" class="modal__clickBox">
-            <use href="./images/Vector-14"></use>
-          </svg>
-
-          <button class="modal__btn" type="submit">Wyślij</button>
+            <svg width="16px" height="15px" class="modal__clickBox">
+              <use href="./images/Vector-14"></use>
+            </svg>
+            <div class="modal__button-section">
+              <button type="submit" class="modal__btn">Wyślij</button>
+            </div>
+          </label>
         </form>
       </div>
     </div>
