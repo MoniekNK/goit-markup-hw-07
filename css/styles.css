@@ -811,6 +811,10 @@ body {
   font-size: 12px;
 }
 
+.modal__form {
+  display: block;
+  padding: 40px;
+}
 .modal__header {
   color: var(--text-primary-color);
   text-align: center;
@@ -843,7 +847,7 @@ body {
 }
 .modal__input svg {
   position: absolute;
-  left: 15px 14px;
+  left: 15px;
   fill: var(--text-primary-color);
   transition-property: fill;
   transition-duration: 250ms;
@@ -854,10 +858,6 @@ body {
   fill: var(--object-primary-background-color);
 }
 
-.modal__form {
-  display: block;
-  padding: 40px;
-}
 .modal__form textarea {
   resize: none;
   width: 448px;
