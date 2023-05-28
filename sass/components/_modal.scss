@@ -54,17 +54,16 @@
   }
   &__label {
     color: getColor("text-secondary-color");
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
   }
   &__header {
     color: getColor("text-primary-color");
-    padding-top: 40px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -90,7 +89,7 @@
   &__input input:focus {
     border-color: getColor("object-primary-background-color");
   }
-  &ot {
+  &__input {
     position: relative;
   }
   &__input svg {
@@ -142,6 +141,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    font-weight: 400;
     color: getColor("text-secondary-color");
     margin-left: 7px;
     position: relative;
@@ -205,23 +205,6 @@
       transition-property: transform, font-weight;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__click {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 15px;
-      visibility: hidden;
-      border-radius: 2px;
-      top: 0;
-      margin-left: 15px;
-    }
-
-    &__clickBox {
-      position: absolute;
-      border-radius: 2px;
-      margin-left: 15px;
     }
 
     &__btn {

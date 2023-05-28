@@ -802,21 +802,22 @@ body {
 
 .modal__label {
   color: var(--text-secondary-color);
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
 }
+
 .modal__header {
   color: var(--text-primary-color);
-  font-weight: 700;
-  line-height: 23px;
-  font-size: 20px;
   text-align: center;
+  font-weight: 700;
+  font-size: 20px;
   letter-spacing: 0.03em;
+  line-height: 1.15;
   margin-bottom: 12px;
 }
 
@@ -864,7 +865,6 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
-  padding: 12px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -952,23 +952,6 @@ body {
   transition-property: transform, font-weight;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__click {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 15px;
-  visibility: hidden;
-  border-radius: 2px;
-  top: 0;
-  margin-left: 15px;
-}
-
-.modal__clickBox {
-  position: absolute;
-  border-radius: 2px;
-  margin-left: 15px;
 }
 
 .modal__btn {
