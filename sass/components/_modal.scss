@@ -151,23 +151,20 @@
 
 .modal__click {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
   border-radius: 2px;
+  top: 0;
   margin-left: 15px;
 }
 
 .modal__clickBox {
   position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-}
-.modal__checkboxInput {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  width: 0;
-  height: 0;
+  border-radius: 2px;
+  margin-left: 15px;
 }
 
 .modal__checkboxInput:checked ~ .modal__clickBox {
