@@ -708,10 +708,6 @@
 .modal__checkboxInput:checked ~ .modal__clickBox {
   display: none;
 }
-.modal__checkboxInput:checked ~ .modal__click {
-  background-color: #2196f3;
-  visibility: visible;
-}
 .modal__btn {
   color: #fff;
   background: #2196f3;

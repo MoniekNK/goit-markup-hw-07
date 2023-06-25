@@ -170,10 +170,6 @@
 .modal__checkboxInput:checked ~ .modal__clickBox {
   display: none;
 }
-.modal__checkboxInput:checked ~ .modal__click {
-  background-color: getColor("object-primary-background-color");
-  visibility: visible;
-}
 
 .modal__btn {
   color: getColor("text-tertiary-color");
@@ -187,6 +183,5 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 31px;
   letter-spacing: 0.06em;
 }

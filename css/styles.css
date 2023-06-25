@@ -946,6 +946,7 @@ body {
   font-weight: 400;
   color: var(----text-secondary-color);
   margin-bottom: 28px;
+  padding-bottom: 31px;
 }
 .modal__links {
   text-decoration: underline;
@@ -985,6 +986,5 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 31px;
   letter-spacing: 0.06em;
 }
